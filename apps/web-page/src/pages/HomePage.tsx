@@ -269,10 +269,10 @@ export default function HomePage({ onPageChange }: HomePageProps) {
               >
                 {categories.map((category, index) => {
                   const categoryImages: Record<string, string> = {
-                    'Bienestar': 'https://sfqoraqpngkrfrgzxjdo.supabase.co/storage/v1/object/public/Categories/Wellness.webp',
-                    'Lujo': 'https://sfqoraqpngkrfrgzxjdo.supabase.co/storage/v1/object/public/Categories/Luxury.webp',
-                    'Gastronomía': 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=800',
-                    'Aventura': 'https://sfqoraqpngkrfrgzxjdo.supabase.co/storage/v1/object/public/Categories/Adventure.webp'
+                    'Bienestar': 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=1200',
+                    'Lujo': 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&q=80&w=1200',
+                    'Gastronomía': 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=1200',
+                    'Aventura': 'https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&q=80&w=1200'
                   };
 
                   const categorySubtitles: Record<string, string> = {

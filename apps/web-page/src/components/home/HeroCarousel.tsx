@@ -1,8 +1,8 @@
 const IMAGES = [
-  'https://sfqoraqpngkrfrgzxjdo.supabase.co/storage/v1/object/public/Slides/Onboarding.webp', // Bienvenida
-  'https://sfqoraqpngkrfrgzxjdo.supabase.co/storage/v1/object/public/Slides/Experiences.webp', // Experiences
-  'https://sfqoraqpngkrfrgzxjdo.supabase.co/storage/v1/object/public/Slides/Education.webp',  // Education
-  'https://sfqoraqpngkrfrgzxjdo.supabase.co/storage/v1/object/public/Slides/Network.webp' // Network
+  'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80&w=2000', // Bienvenida — villa de lujo con piscina infinita
+  'https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&q=80&w=2000', // Lujo — yate privado al atardecer
+  'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=2000', // Educación — sala/mentor business
+  'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=2000'  // Network — gala social internacional
 ];
 
 const MESSAGES = [
