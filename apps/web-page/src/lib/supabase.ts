@@ -1,19 +1,24 @@
 import { createClient } from '@supabase/supabase-js';
+import { createDemoClient } from './demoClient';
 
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
-export const isSupabaseConfigured = !!(supabaseUrl && supabaseAnonKey);
+const hasRealConfig = !!(supabaseUrl && supabaseAnonKey);
 
-if (!isSupabaseConfigured) {
-  console.error('Missing VITE_SUPABASE_URL or VITE_SUPABASE_ANON_KEY in environment variables');
+// When no real credentials are present we fall back to a self-contained demo
+// client with sample data, so the app is fully browsable as a public preview
+// (no login, no backend required). The app still runs in this mode.
+export const isDemoMode = !hasRealConfig;
+export const isSupabaseConfigured = true;
+
+if (isDemoMode) {
+  console.info('Running in DEMO mode with sample data (no Supabase credentials set).');
 }
 
-// Fallback to placeholder to prevent module-level crash
-export const supabase = createClient(
-  supabaseUrl || 'https://placeholder.supabase.co',
-  supabaseAnonKey || 'placeholder'
-);
+export const supabase = hasRealConfig
+  ? createClient(supabaseUrl, supabaseAnonKey)
+  : createDemoClient();
 
 export type MembershipType = 'gold' | 'platinum' | 'black_elite';
 
