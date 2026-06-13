@@ -101,7 +101,7 @@ const rawExperiences: Exp[] = [
   {
     id: 'e-7', title: 'Suite Real Burj Al Arab', destination_id: 'd-dxb', category_id: 'c-lujo',
     description: 'Una noche en la legendaria suite del hotel más icónico de Dubai, con mayordomo privado, Rolls-Royce y cena de siete tiempos.',
-    image_url: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=1200',
+    image_url: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1200',
     base_price: 5000, gold_price: 4100, platinum_price: 3200, black_elite_price: 0,
     black_elite_included: true, black_elite_monthly_limit: 1, is_featured: true, created_at: '2024-02-07T00:00:00Z',
   },
